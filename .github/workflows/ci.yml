@@ -15,11 +15,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ ubuntu-20.04, macos-latest ]
+        os: [ ubuntu-latest, macos-latest ]
         python: [ 3.8, 3.9 ]
         node: [ 14 ]
     env:
-      SAM_CLI_TELEMETRY: "0"
+      SAM_CLI_TELEMETRY: 0
       AWS_REGION: "us-east-1"
       AWS_DEFAULT_REGION: "us-east-1"
       AWS_ACCESS_KEY_ID: "AKIAIOSFODNN7EXAMPLE"
